@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: rgb(228, 242, 255);
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: black;
+}
+h1 {
+  color: red;
+}
+
+.container {
+  width: 1100px;
+  height: 100vh;
+  margin-inline: auto;
+  /* margin-block: 20px; */
+  border: 1px solid black;
+  padding: 20px;
+  background-color: black;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+}
+.navbar nav {
+  margin-top: 35px;
+  background-color: rgb(19, 19, 19);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.navbar label {
+  margin-inline: 30px;
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#home:checked ~ section .content-home {
+  display: block;
+}
+#vedio:checked ~ section .content-vedio {
+  display: block;
+}
+#playlist:checked ~ section .content-playlist {
+  display: block;
+}
+#live:checked ~ section .content-live {
+  display: block;
+}
+
+#home:checked ~ .navbar nav .label,
+#vedio:checked ~ .navbar nav .label,
+#playlist:checked ~ .navbar nav .label,
+#live:checked ~ .navbar nav .label {
+  color: rgb(255, 255, 255);
+}
+
+#home:checked ~ .navbar nav .active-tab {
+  left: 0%;
+  /* transition: all 0.8s; */
+}
+
+#vedio:checked ~ .navbar nav .active-tab {
+  left: 12.5%;
+  /* transition: all 0.8s; */
+}
+#playlist:checked ~ .navbar nav .active-tab {
+  left: 24.9%;
+  /* transition: all 0.8s; */
+}
+#live:checked ~ .navbar nav .active-tab {
+  left: 36.5%;
+  /* transition: all 0.8s; */
+}
+
+.active-tab {
+  position: absolute;
+  background-color: rgb(228, 243, 255);
+  width: 110px;
+  height: 3px;
+  position: absolute;
+  top: 90%;
+  padding: 0 1rem;
+  z-index: -1;
+  transition: all 0.5s;
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}

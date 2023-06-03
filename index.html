@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nav slider</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Youtube</h1>
+
+      <input type="radio" id="home" name="tab" checked />
+      <input type="radio" id="vedio" name="tab" />
+      <input type="radio" id="playlist" name="tab" />
+      <input type="radio" id="live" name="tab" />
+
+      <div class="navbar">
+        <nav>
+          <label for="home" class="label home">Home</label>
+          <label for="vedio" class="label vedio">vedio</label>
+          <label for="playlist" class="label playlist">Playlist</label>
+          <label for="live" class="label live">Live</label>
+          <div class="active-tab"></div>
+        </nav>
+      </div>
+      <section>
+        <div class="content content-home">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+            soluta aperiam repellat repellendus, laborum rerum cumque illum
+            ipsum impedit necessitatibus eligendi optio adipisci eos quod quas
+            nostrum laboriosam asperiores quae.
+          </p>
+        </div>
+        <div class="content content-vedio">
+          <p>This channel doesn't upload vedio</p>
+        </div>
+        <div class="content content-playlist">
+          <p>This channel doesn't created a playlist to show</p>
+        </div>
+        <div class="content content-live">
+          <p>This channe doesn't stream any vedio</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
