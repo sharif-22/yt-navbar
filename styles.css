@@ -101,14 +101,3 @@ nav {
   z-index: -1;
   transition: all 0.5s;
 }
-@media all and (min-width: 480px) and (max-width: 768px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media all and (max-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
